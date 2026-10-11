@@ -17,7 +17,7 @@
 |---|---|
 | Coffret | IDE CDN12PT/RR, 12 modules, IP65 |
 | Sectionneur | Sectionneur solaire 600 Vdc / 25 A |
-| Parafoudre DC | Citel DS 600/51, type 2 (facture : « Parafoudre DC 600/51 », marque non indiquée) |
+| Parafoudre DC | Citel DS 600/51, type 2 — posé (confirmé par Polar le 11/10) |
 | Terre coffret | PE 10 mm² (H07V-R rigide V/J) → répartiteur de terre |
 
 ## Armoire de production
@@ -37,12 +37,13 @@
 | Élément | Référence / valeur |
 |---|---|
 | Coffret | IDE CDN12PT/RR, 12 modules, IP65 ⚠️ (2 achetés : 1 coffret DC + 1 coffret AC ?) |
-| Câble | R2V 3G6 ⚠️ rôle « entrée » à préciser |
+| Arrivée | R2V 3G6 depuis la sortie AC de l'onduleur (L + N + PE) ; PE → bornier de terre du coffret → répartiteur |
+| Répartition | Wago : le différentiel (circuit brocante) et le départ chaumière sont **en parallèle** |
 | **Circuit brocante** | Interrupteur différentiel Legrand DX³ 2P 40 A 30 mA type A (LEG411617) |
-| | Disjoncteur DNX³ 1P+N 20 A courbe C (LEG406784) |
-| | Disjoncteur DNX³ 1P+N 10 A courbe C (LEG406782) |
-| | Prise modulaire 2P+T 16 A (LEG004280) |
-| **Départ chaumière** | Disjoncteur DNX³ 1P+N 25 A courbe C (LEG406776) |
+| | Disjoncteur DNX³ 1P+N 20 A courbe C (LEG406784) — prises brocante (dont la prise modulaire) |
+| | Disjoncteur DNX³ 1P+N 10 A courbe C (LEG406782) — éclairage brocante (à réaliser) |
+| | Prise modulaire 2P+T 16 A (LEG004280) — sur le C20 |
+| **Départ chaumière** | Disjoncteur DNX³ 1P+N 25 A courbe C (LEG406776) — pas de 30 mA en amont ⚠️ |
 | | Parafoudre DEHN type 2 15 kA 230 V débrochable (952179) — **seul parafoudre AC** : protège la liaison armoire → chaumière |
 
 ## Mise à la terre

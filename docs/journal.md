@@ -10,6 +10,7 @@
 - [ ] Tirer le 3G6 de l'armoire jusqu'au tableau divisionnaire de la chaumière
 
 ## Entrées
+- 2026-10-11 — Unifilaire armoire : DC en 2 fils, réponses de Polar intégrées (parafoudre DC = Citel, sortie AC en R2V 3G6, Q4 = prises dont X1, Q5 = éclairage, Q6 en parallèle de Q3 par Wago). ⚠️ Départ chaumière sans 30 mA : décision à prendre avant de tirer le câble.
 - 2026-10-11 — `unifilaire-armoire.drawio` refait en vrai unifilaire (symboles normalisés, jeu de barres, repères Q/F/G/U, ligne de départs) à la place de la version en blocs.
 - 2026-10-11 — Schéma `unifilaire-armoire.drawio` (état installé) ; points flous marqués « ? » et ajoutés à `a-verifier.md` (régime de neutre, sortie AC, prise modulaire). Export PNG à faire (pas de draw.io CLI sur le Mac).
 - 2026-10-11 — Confirmé : MEGA 125 A et coupe-batterie posés ; câbles batterie OK. Décision (prise cet été) : un seul parafoudre DEHN, dans l'armoire, pas dans le tableau chaumière.

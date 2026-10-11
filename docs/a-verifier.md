@@ -2,7 +2,6 @@
 
 ## Écarts entre l'inventaire d'août et la fiche Notion d'octobre
 - [ ] **Fusible MEGA 125 A et coupe-batterie 275 A** : posés (confirmé par Polar le 11/10). Reste à relever l'ordre côté + (batterie → MEGA → coupe-batterie → onduleur ?) pour le schéma.
-- [ ] **Parafoudre DC** : fiche = Citel DS 600/51 ; inventaire d'août mentionnait aussi un DEHN type 2 DC. Lequel est posé ?
 - [ ] **Bâtiment** : la fiche parle de « brocante » ; les anciennes notes de « bâtiment ardoise ». Même bâtiment ? (Indice : les fixations panneaux achetées sont des crochets pour ardoise.)
 
 ## Factures (ajoutées le 11/10/2026)
@@ -12,14 +11,11 @@
 - [ ] **R2V 3G6** : 25 m + 50 m achetés. Lequel sert à quoi, et combien en reste-t-il ?
 
 ## Coffret AC
-- [ ] « Entrée R2V 3G6 » : liaison onduleur → coffret AC, ou départ vers la chaumière ? (Le départ chaumière reste à tirer d'après les prochaines étapes.)
-- [ ] Le départ chaumière (disj. 25 A + parafoudre DEHN) est-il **en aval du différentiel 40 A/30 mA** ou en direct ? Si en direct, prévoir la protection différentielle en tête du tableau chaumière (sélectivité à réfléchir).
-- [ ] Circuits 20 A et 10 A de la brocante : qu'alimentent-ils ? Sections associées ?
+- [ ] ⚠️ **Départ chaumière sans 30 mA** : Q6 (C25) est en parallèle du différentiel (Wago). Le R2V enterré et le tableau chaumière (en amont de son différentiel) ne sont protégés par aucun 30 mA. Avec un onduleur comme source, le courant de court-circuit est limité, donc le C25 risque de ne pas déclencher sur défaut. **Décision à prendre avant de tirer le câble** : mettre un 30 mA sur le départ chaumière dans l'armoire (le DX³ de réserve ?), quitte à en racheter pour le tableau chaumière.
+- [ ] Sections posées : Q4 (C20, prises) → 2,5 mm² minimum requis ; Q5 (C10, éclairage) → 1,5 mm² minimum. Relever ce qui est posé (marquage sur la gaine).
 
 ## Mise en service
-- [ ] **Régime de neutre côté AC** : où est faite la liaison N–PE en sortie de l'EasySolar (relais de terre interne en mode onduleur ?) ? Sans elle, le différentiel 30 mA ne déclenche pas sur défaut à la terre.
-- [ ] Sur quelle sortie AC de l'EasySolar le coffret AC est-il branché, et avec quel câble ?
-- [ ] Prise modulaire 16 A du coffret AC : protégée par le C20 ou le C10 ?
+- [ ] **Liaison N–PE en sortie de l'EasySolar** (le PE, lui, est continu) : normalement faite par le relais de terre interne en mode onduleur. Test : onduleur seul en marche, sur la prise X1 mesurer N–PE ≈ 0 V et L–PE ≈ 230 V. Si N–PE ≈ 115 V, le neutre est flottant et le 30 mA ne protège pas.
 - [ ] Synoptique : un trait de terre arrive sur le coupe-batterie — volontaire ? (pas repris dans l'unifilaire)
 - [ ] Profil LiFePO4 VEConfigure : valeurs à recouper avec la fiche technique Redodo.
 - [ ] Câble VE.Direct SmartShunt → EasySolar à commander.
