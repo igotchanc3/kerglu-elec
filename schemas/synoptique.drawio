@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="synoptique" name="Synoptique">
-        <mxGraphModel dx="1163" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="700" math="0" shadow="0">
+        <mxGraphModel dx="530" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="700" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -40,7 +40,7 @@
                 <mxCell id="terre_piquet" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;dashed=1;" value="Piquet 1 m + tresse Cu 25 mm²&lt;br&gt;barrette de coupure" vertex="1">
                     <mxGeometry height="50" width="270" x="800" y="560" as="geometry"/>
                 </mxCell>
-                <mxCell id="tab_chaumiere" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" value="&lt;b&gt;Tableau divisionnaire&lt;/b&gt;&lt;br&gt;IDE 18 mod. · diff. 40 A / 30 mA&lt;br&gt;parafoudre DEHN · ~6 départs&lt;br&gt;&lt;i&gt;à poser&lt;/i&gt;" vertex="1">
+                <mxCell id="tab_chaumiere" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" value="&lt;b&gt;Tableau divisionnaire&lt;/b&gt;&lt;br&gt;IDE 18 mod. · diff. 40 A / 30 mA&lt;br&gt;· ~6 départs&lt;br&gt;&lt;i&gt;à poser&lt;/i&gt;" vertex="1">
                     <mxGeometry height="100" width="220" x="1260" y="227.5" as="geometry"/>
                 </mxCell>
                 <mxCell id="w_pv_dc" edge="1" parent="1" source="pv" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" target="dc_coffret" value="Unicable 6 mm² · 15 m · MC4">
