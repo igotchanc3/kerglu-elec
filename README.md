@@ -7,6 +7,8 @@ Ce repo est **la source de vérité** du projet élec : contexte, matériel, dé
 - **Claude chat** (projet « kerglu » sur claude.ai) : discussions, réflexion, relecture ;
 - **toi** et toute personne du collectif qui reprendra l'install.
 
+**Photos du chantier** : https://photos.app.goo.gl/cQUhXpDYmc9xF5Hx8
+
 ## Structure
 
 ```
