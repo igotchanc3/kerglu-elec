@@ -19,7 +19,7 @@
         <mxCell id="es" value="&lt;b&gt;Victron EasySolar-II GX&lt;/b&gt;&lt;br&gt;24/3000/70-32&lt;br&gt;onduleur-chargeur + MPPT 250/70 + GX&lt;br&gt;&lt;i&gt;profil LiFePO4 à programmer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#004c99;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="200" width="210" height="100" as="geometry"/>
         </mxCell>
-        <mxCell id="bat_sect" value="Sectionneur batterie ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
+        <mxCell id="bat_sect" value="Coupe-batterie Victron 275 A ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="250" width="210" height="45" as="geometry"/>
         </mxCell>
         <mxCell id="bat_fus" value="Fusible MEGA 125 A ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
@@ -52,7 +52,7 @@
         <mxCell id="w_dc_es" value="PV +/− · 6 mm² · cosses M6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="dc_coffret" target="es">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="w_bat_fus" value="+ 50 mm² · M8" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat" target="bat_fus">
+        <mxCell id="w_bat_fus" value="+ 50 mm² · M8/M10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat" target="bat_fus">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="w_fus_sect" value="+" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat_fus" target="bat_sect">
@@ -61,7 +61,7 @@
         <mxCell id="w_sect_es" value="+" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat_sect" target="es">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="w_bat_shunt" value="− 50 mm² · M8" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat" target="shunt">
+        <mxCell id="w_bat_shunt" value="− 50 mm² · M8/M10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="bat" target="shunt">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="w_shunt_es" value="−" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="shunt" target="es">

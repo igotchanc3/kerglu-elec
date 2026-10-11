@@ -14,11 +14,13 @@ CLAUDE.md                   Instructions lues automatiquement par Claude Code
 docs/
   contexte.md               Le lieu, l'objectif, les contraintes (chaume = sécurité incendie)
   materiel.md               Inventaire du matériel installé / sur site
+  commandes.md              Achats : fournisseurs, factures, quantités, prix
   missions.md               Les 5 missions (M1 à M5) et dépendances entre corps d'état
   apprentissages.md         Ce qu'on a appris (Victron, LiFePO4, DC, terre, bilan énergie)
   exploitation.md           Séquences d'arrêt / remise en route, réglages, relevés SOC
   a-verifier.md             Points ouverts et incertitudes à lever sur site
   journal.md                Journal daté des décisions et interventions
+commandes/                  Factures PDF
 schemas/
   README.md                 Conventions de dessin
   synoptique.drawio         Vue d'ensemble PV → ardoise → chaumière
