@@ -10,6 +10,7 @@
 - [ ] Tirer le 3G6 de l'armoire jusqu'au tableau divisionnaire de la chaumière
 
 ## Entrées
+- 2026-10-11 — Confirmé : MEGA 125 A et coupe-batterie posés ; câbles batterie OK. Décision (prise cet été) : un seul parafoudre DEHN, dans l'armoire, pas dans le tableau chaumière.
 - 2026-10-11 — Factures ajoutées (`commandes/`) : création de `docs/commandes.md`, `materiel.md` complété (réfs, stock), nouveaux points dans `a-verifier.md`.
 - 2026-10-11 — Migration de la fiche Notion « Suivi » vers ce repo ; création des docs et du synoptique.
 - 2026-08 — Chantier d'été : armoire de production posée et câblée, panneaux posés sur la toiture et mis à la terre.

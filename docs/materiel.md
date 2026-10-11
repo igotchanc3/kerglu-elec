@@ -8,7 +8,7 @@
 |---|---|
 | Panneaux | 2× Trina Vertex S+ 500 Wc biverre/bifacial, **en série** — par panneau : Voc 40,1 V, Vmpp 33,3 V, Isc 15,86 A, Impp 15,03 A ; Voc string à froid ≈ 100 V |
 | Fixation (toiture ardoise) | Novotegra : 6 crochets ardoise, 2 rails alu 2,40 m, 4 cales d'extrémité 30-42 C noir, 2 cales centrales 30-42 C noir, 4 caches fin de rail C47 |
-| Liaison panneaux → coffret DC | Unicable 6151 BR, 15 m, 6 mm², MC4 ⚠️ pas de facture |
+| Liaison panneaux → coffret DC | Unicable 6151 BR, 15 m, 6 mm², MC4 (commandé par le cousin de Polar, facture sur demande) |
 | Terre panneaux | H07V-K 6 mm² V/J (25 m) — agrafes Rayvolt IZIRV03 ×7 (câble/panneaux) — kits ESI2 ESI2ASEK02 ×4 (câble/rails) |
 | | Kits IZIPV IZIASEK01 ×4 (T-bolt) ⚠️ usage à préciser |
 
@@ -26,10 +26,10 @@
 | Onduleur-chargeur | Victron EasySolar-II GX 24/3000/70-32 (MPPT 250/70 + GX intégrés) — [manuel](https://www.victronenergy.com/upload/documents/EasySolar-II_GX/11230-EasySolar-II_GX-pdf-fr.pdf) |
 | Câbles PV → onduleur | Câble solaire 6 mm² (3 m rouge + 3 m noir), cosses M6 |
 | Terre onduleur | PE 6 mm², cosse M6 |
-| Batterie | Redodo LiFePO4 24 V 100 Ah, BMS 100 A, protection charge basse température ⚠️ pas de facture |
-| Câbles batterie | 50 mm² extra souple, sur mesure : 30 cm M8–M8 rouge · 30 cm M8–M10 rouge · 30 cm M8–M10 noir · 50 cm M8–M10 rouge · 50 cm M8–M10 noir ⚠️ affectation de chaque câble à relever |
-| Fusible batterie | Fusible MEGA 125 A + porte-fusible Victron MEGA ⚠️ acheté, pose à confirmer |
-| Sectionneur batterie | Victron coupe-batterie 275 A ⚠️ acheté, pose à confirmer |
+| Batterie | Redodo LiFePO4 24 V 100 Ah, BMS 100 A, protection charge basse température (commandé par le cousin de Polar, facture sur demande) |
+| Câbles batterie | 50 mm² extra souple, sur mesure : 30 cm M8–M8 rouge · 30 cm M8–M10 rouge · 30 cm M8–M10 noir · 50 cm M8–M10 rouge · 50 cm M8–M10 noir |
+| Fusible batterie | Fusible MEGA 125 A + porte-fusible Victron MEGA (posé) |
+| Sectionneur batterie | Victron coupe-batterie 275 A (posé) |
 | Shunt | Victron SmartShunt 300 A / 50 mV (IP65) — **pas encore raccordé** à l'onduleur (câble VE.Direct à commander) |
 | Interface | Victron MK3-USB-C (pour VEConfigure) |
 
@@ -43,7 +43,7 @@
 | | Disjoncteur DNX³ 1P+N 10 A courbe C (LEG406782) |
 | | Prise modulaire 2P+T 16 A (LEG004280) |
 | **Départ chaumière** | Disjoncteur DNX³ 1P+N 25 A courbe C (LEG406776) |
-| | Parafoudre DEHN type 2 15 kA 230 V débrochable (952179) |
+| | Parafoudre DEHN type 2 15 kA 230 V débrochable (952179) — **seul parafoudre AC** : protège la liaison armoire → chaumière |
 
 ## Mise à la terre
 | Élément | Référence / valeur |
@@ -57,7 +57,7 @@
 | Élément | Référence / valeur |
 |---|---|
 | Liaison | R2V 3G6 armoire → tableau divisionnaire (PE inclus, pas de 2e piquet) |
-| Tableau | IDE CDN18PT/RR 18 modules IP65 — différentiel 40 A/30 mA type A, ~6 disjoncteurs, peigne HX³, parafoudre DEHN AC 15 kA (composants sur site) ⚠️ un seul DEHN acheté |
+| Tableau | IDE CDN18PT/RR 18 modules IP65 — différentiel 40 A/30 mA type A, ~6 disjoncteurs, peigne HX³ (composants sur site) — pas de parafoudre (décision : un seul, dans l'armoire) |
 | Hauteurs de pose | Prises : axe 25 cm · interrupteurs : 110 cm |
 
 ## Stock (acheté, d'après les factures)

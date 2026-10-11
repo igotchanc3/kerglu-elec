@@ -17,7 +17,7 @@
 | 16/08/2026 | Elec44 | [#FA1082260](../commandes/%23FA1082260.pdf) | Mise à la terre des panneaux | 101,55 € |
 | | | | **Total** | **2 783,57 €** |
 
-Pas de facture dans le repo pour : **batterie Redodo**, **Unicable 6151 BR** (liaison panneaux). → `a-verifier.md`.
+Pas de facture dans le repo pour la **batterie Redodo** et l'**Unicable 6151 BR** : commandés par le cousin de Polar, factures à lui demander si besoin.
 
 ## Détail par commande
 

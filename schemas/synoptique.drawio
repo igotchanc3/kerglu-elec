@@ -19,10 +19,10 @@
         <mxCell id="es" value="&lt;b&gt;Victron EasySolar-II GX&lt;/b&gt;&lt;br&gt;24/3000/70-32&lt;br&gt;onduleur-chargeur + MPPT 250/70 + GX&lt;br&gt;&lt;i&gt;profil LiFePO4 à programmer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#004c99;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="200" width="210" height="100" as="geometry"/>
         </mxCell>
-        <mxCell id="bat_sect" value="Coupe-batterie Victron 275 A ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
+        <mxCell id="bat_sect" value="Coupe-batterie Victron 275 A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="250" width="210" height="45" as="geometry"/>
         </mxCell>
-        <mxCell id="bat_fus" value="Fusible MEGA 125 A ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
+        <mxCell id="bat_fus" value="Fusible MEGA 125 A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="340" width="210" height="45" as="geometry"/>
         </mxCell>
         <mxCell id="bat" value="&lt;b&gt;Batterie Redodo&lt;/b&gt;&lt;br&gt;LiFePO4 24 V 100 Ah&lt;br&gt;BMS 100 A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
@@ -43,7 +43,7 @@
         <mxCell id="terre_piquet" value="Piquet 1 m + tresse Cu 25 mm²&lt;br&gt;barrette de coupure" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="560" width="270" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="tab_chaumiere" value="&lt;b&gt;Tableau divisionnaire&lt;/b&gt;&lt;br&gt;IDE 18 mod. · diff. 40 A / 30 mA&lt;br&gt;parafoudre DEHN · ~6 départs&lt;br&gt;&lt;i&gt;à poser&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" vertex="1" parent="1">
+        <mxCell id="tab_chaumiere" value="&lt;b&gt;Tableau divisionnaire&lt;/b&gt;&lt;br&gt;IDE 18 mod. · diff. 40 A / 30 mA&lt;br&gt;~6 départs · sans parafoudre&lt;br&gt;&lt;i&gt;à poser&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="1210" y="240" width="220" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="w_pv_dc" value="Unicable 6 mm² · 15 m · MC4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;" edge="1" parent="1" source="pv" target="dc_coffret">
