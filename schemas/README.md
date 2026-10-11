@@ -2,7 +2,7 @@
 
 ## Outil
 - Fichiers `.drawio` (XML non compressé), édités dans VS Code avec l'extension **Draw.io Integration** (`hediet.vscode-drawio`) ou sur app.diagrams.net.
-- Symboles : bibliothèque draw.io « Electrical » (IEC) pour les unifilaires ; blocs simples pour le synoptique.
+- Symboles : la bibliothèque draw.io « Electrical » n'a ni disjoncteur, ni différentiel, ni onduleur =/~, ni prise. Les unifilaires utilisent donc des **stencils maison** (style `shape=stencil(...)`) à copier-coller d'un symbole existant. Blocs simples pour le synoptique.
 
 ## Couleurs
 | Élément | Couleur |
@@ -15,7 +15,7 @@
 
 ## Schémas prévus
 - [x] `synoptique.drawio` — vue d'ensemble
-- [x] `unifilaire-armoire.drawio` — DC + AC de l'armoire de production (état installé, symboles simplifiés en blocs)
+- [x] `unifilaire-armoire.drawio` — DC + AC de l'armoire de production (état installé, symboles NF EN 60617 en stencils maison)
 - [ ] `unifilaire-chaumiere.drawio` — tableau divisionnaire chaumière
 
 ## Exports
