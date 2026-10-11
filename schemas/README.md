@@ -15,7 +15,7 @@
 
 ## Schémas prévus
 - [x] `synoptique.drawio` — vue d'ensemble
-- [ ] `unifilaire-armoire.drawio` — DC + AC de l'armoire de production
+- [x] `unifilaire-armoire.drawio` — DC + AC de l'armoire de production (état installé, symboles simplifiés en blocs)
 - [ ] `unifilaire-chaumiere.drawio` — tableau divisionnaire chaumière
 
 ## Exports

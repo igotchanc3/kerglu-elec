@@ -1,0 +1,267 @@
+<mxfile host="claude">
+    <diagram id="unifilaire_armoire" name="Unifilaire armoire">
+        <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1260" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- ===== Zones ===== -->
+                <mxCell id="z_toiture" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;arcSize=3;" value="Toiture brocante" vertex="1">
+                    <mxGeometry x="20" y="20" width="300" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="z_dc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf3f2;strokeColor=#b85450;verticalAlign=top;fontStyle=1;arcSize=3;" value="Coffret DC PV — IDE CDN12PT/RR 12 mod. IP65" vertex="1">
+                    <mxGeometry x="20" y="230" width="300" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="z_ac" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f9f2;strokeColor=#82b366;verticalAlign=top;fontStyle=1;arcSize=2;" value="Coffret AC — IDE CDN12PT/RR 12 mod. IP65" vertex="1">
+                    <mxGeometry x="960" y="230" width="700" height="560" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== PV ===== -->
+                <mxCell id="pv" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Champ PV&lt;/b&gt;&lt;br&gt;2× Trina Vertex S+ 500 Wc en série&lt;br&gt;Voc string froid ≈ 100 V · Isc 15,86 A" vertex="1">
+                    <mxGeometry x="50" y="60" width="240" height="90" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Coffret DC ===== -->
+                <mxCell id="dc_sect" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;Sectionneur solaire&lt;/b&gt;&lt;br&gt;600 Vdc / 25 A" vertex="1">
+                    <mxGeometry x="80" y="290" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="dc_spd" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#d79b00;dashed=1;strokeWidth=2;" value="&lt;b&gt;Parafoudre DC type 2&lt;/b&gt;&lt;br&gt;Citel DS 600/51 ?&lt;br&gt;&lt;i&gt;(ou DEHN DC ? — à vérifier)&lt;/i&gt;" vertex="1">
+                    <mxGeometry x="80" y="400" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="dc_pe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;" value="Borne PE coffret DC" vertex="1">
+                    <mxGeometry x="80" y="515" width="180" height="30" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Onduleur ===== -->
+                <mxCell id="es" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#004c99;strokeWidth=3;" value="&lt;b&gt;Victron EasySolar-II GX&lt;br&gt;24/3000/70-32&lt;/b&gt;&lt;br&gt;MPPT 250/70 · onduleur-chargeur · GX&lt;br&gt;&lt;br&gt;&lt;i&gt;profil LiFePO4 pas encore programmé&lt;/i&gt;" vertex="1">
+                    <mxGeometry x="520" y="300" width="280" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_neutre" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d79b00;dashed=1;align=left;spacingLeft=6;fontSize=11;" value="&lt;b&gt;Régime de neutre ?&lt;/b&gt; Liaison N–PE de la sortie AC (relais de terre interne en mode onduleur ?) — conditionne le déclenchement du 30 mA. À vérifier." vertex="1">
+                    <mxGeometry x="520" y="170" width="280" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Batterie ===== -->
+                <mxCell id="bat_sect" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;Coupe-batterie&lt;/b&gt;&lt;br&gt;Victron 275 A" vertex="1">
+                    <mxGeometry x="520" y="560" width="130" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="bat_fus" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;Fusible MEGA 125 A&lt;/b&gt;&lt;br&gt;porte-fusible Victron" vertex="1">
+                    <mxGeometry x="520" y="660" width="130" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="shunt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#333333;" value="&lt;b&gt;SmartShunt&lt;/b&gt;&lt;br&gt;300 A / 50 mV" vertex="1">
+                    <mxGeometry x="670" y="660" width="130" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="bat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="&lt;b&gt;Batterie Redodo LiFePO4&lt;/b&gt;&lt;br&gt;24 V 100 Ah · BMS 100 A" vertex="1">
+                    <mxGeometry x="520" y="780" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_ordre" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d79b00;dashed=1;fontSize=11;" value="Ordre côté + : batterie → MEGA → coupe-batterie → onduleur ?&lt;br&gt;&lt;i&gt;à relever sur site&lt;/i&gt;" vertex="1">
+                    <mxGeometry x="340" y="610" width="160" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Coffret AC ===== -->
+                <mxCell id="ac_bus1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=none;" value="" vertex="1">
+                    <mxGeometry x="990" y="300" width="620" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_diff" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Inter. diff. DX³ 2P&lt;/b&gt;&lt;br&gt;40 A · 30 mA · type A&lt;br&gt;(LEG411617)" vertex="1">
+                    <mxGeometry x="1000" y="330" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_bus2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=none;" value="" vertex="1">
+                    <mxGeometry x="1000" y="440" width="340" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_d20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;DNX³ 1P+N&lt;br&gt;C20&lt;/b&gt;&lt;br&gt;(LEG406784)" vertex="1">
+                    <mxGeometry x="1000" y="480" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_d10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;DNX³ 1P+N&lt;br&gt;C10&lt;/b&gt;&lt;br&gt;(LEG406782)" vertex="1">
+                    <mxGeometry x="1120" y="480" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_prise" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;Prise modulaire&lt;/b&gt;&lt;br&gt;2P+T 16 A&lt;br&gt;(LEG004280)" vertex="1">
+                    <mxGeometry x="1240" y="480" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_c20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;fontSize=11;" value="Circuit brocante ?&lt;br&gt;section ?" vertex="1">
+                    <mxGeometry x="1000" y="620" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_c10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;dashed=1;fontSize=11;" value="Circuit brocante ?&lt;br&gt;section ?" vertex="1">
+                    <mxGeometry x="1120" y="620" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_d25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;DNX³ 1P+N C25&lt;/b&gt;&lt;br&gt;départ chaumière&lt;br&gt;(LEG406776)" vertex="1">
+                    <mxGeometry x="1420" y="330" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_j25" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;" value="" vertex="1">
+                    <mxGeometry x="1485" y="450" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_spd" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;Parafoudre DEHN T2&lt;/b&gt;&lt;br&gt;15 kA · 230 V · débrochable&lt;br&gt;(952179)" vertex="1">
+                    <mxGeometry x="1520" y="480" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac_pe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;" value="Bornier de terre" vertex="1">
+                    <mxGeometry x="1520" y="720" width="130" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Chaumière (à réaliser) ===== -->
+                <mxCell id="tab_chaumiere" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;" value="&lt;b&gt;Tableau divisionnaire chaumière&lt;/b&gt;&lt;br&gt;&lt;i&gt;à réaliser — voir unifilaire-chaumiere&lt;/i&gt;" vertex="1">
+                    <mxGeometry x="1400" y="860" width="180" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Terre ===== -->
+                <mxCell id="terre_rep" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;strokeWidth=2;" value="&lt;b&gt;Répartiteur de terre&lt;/b&gt; Batilec Q832&lt;br&gt;35 mm² · 5 départs (1 libre)" vertex="1">
+                    <mxGeometry x="620" y="960" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="terre_barrette" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;" value="Barrette de coupure" vertex="1">
+                    <mxGeometry x="620" y="1060" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="terre_piquet" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2d7600;dashed=1;" value="Piquet 1 m (kit PACKTERRE01)" vertex="1">
+                    <mxGeometry x="620" y="1140" width="280" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Liaisons DC PV ===== -->
+                <mxCell id="w_pv_sect_p" edge="1" parent="1" source="pv" target="dc_sect" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;exitX=0.45;exitY=1;entryX=0.45;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_pv_sect_n" edge="1" parent="1" source="pv" target="dc_sect" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;endArrow=none;exitX=0.55;exitY=1;entryX=0.55;entryY=0;labelBackgroundColor=#ffffff;align=left;" value="+ / − · Unicable 6 mm² · 15 m · MC4">
+                    <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="w_sect_spd_p" edge="1" parent="1" source="dc_sect" target="dc_spd" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=1;endArrow=none;exitX=0.45;exitY=1;entryX=0.45;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_sect_spd_n" edge="1" parent="1" source="dc_sect" target="dc_spd" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=1;endArrow=none;exitX=0.55;exitY=1;entryX=0.55;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_sect_es_p" edge="1" parent="1" source="dc_sect" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=none;exitX=1;exitY=0.35;entryX=0;entryY=0.1;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_sect_es_n" edge="1" parent="1" source="dc_sect" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;endArrow=none;exitX=1;exitY=0.65;entryX=0;entryY=0.2;labelBackgroundColor=#ffffff;verticalAlign=top;" value="PV + / − · câble solaire 6 mm²&lt;br&gt;(3 m rouge + 3 m noir) · cosses M6">
+                    <mxGeometry relative="1" y="10" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ===== Liaisons batterie ===== -->
+                <mxCell id="w_bat_fus" edge="1" parent="1" source="bat" target="bat_fus" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=3;endArrow=none;exitX=0.232;exitY=0;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;" value="+ 50 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_fus_sect" edge="1" parent="1" source="bat_fus" target="bat_sect" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=3;endArrow=none;exitX=0.5;exitY=0;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;" value="+ 50 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_sect_es" edge="1" parent="1" source="bat_sect" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=3;endArrow=none;exitX=0.5;exitY=0;entryX=0.232;entryY=1;labelBackgroundColor=#ffffff;" value="+ 50 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_bat_shunt" edge="1" parent="1" source="bat" target="shunt" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;exitX=0.768;exitY=0;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;" value="− 50 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_shunt_es" edge="1" parent="1" source="shunt" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;exitX=0.5;exitY=0;entryX=0.768;entryY=1;labelBackgroundColor=#ffffff;" value="− 50 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_shunt_vedirect" edge="1" parent="1" source="shunt" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#999999;strokeWidth=1;dashed=1;endArrow=none;exitX=1;exitY=0.3;entryX=0.95;entryY=1;labelBackgroundColor=#ffffff;fontSize=10;align=left;" value="VE.Direct&lt;br&gt;&lt;i&gt;à raccorder&lt;/i&gt;">
+                    <mxGeometry relative="1" x="-0.2" y="5" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="676"/>
+                            <mxPoint x="840" y="530"/>
+                            <mxPoint x="786" y="530"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ===== Liaisons AC ===== -->
+                <mxCell id="w_es_ac" edge="1" parent="1" source="es" target="ac_bus1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;endArrow=none;exitX=1;exitY=0.3;entryX=0;entryY=0.5;labelBackgroundColor=#ffffff;fontSize=11;" value="Sortie AC 230 V&lt;br&gt;câble ? (R2V 3G6 ?)">
+                    <mxGeometry relative="1" x="-0.3" y="-20" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="w_bus1_diff" edge="1" parent="1" source="ac_bus1" target="ac_diff" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;exitX=0.177;exitY=1;entryX=0.5;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_diff_bus2" edge="1" parent="1" source="ac_diff" target="ac_bus2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;exitX=0.5;exitY=1;entryX=0.294;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_bus2_d20" edge="1" parent="1" source="ac_bus2" target="ac_d20" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;exitX=0.147;exitY=1;entryX=0.5;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_bus2_d10" edge="1" parent="1" source="ac_bus2" target="ac_d10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_bus2_prise" edge="1" parent="1" source="ac_bus2" target="ac_prise" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;endArrow=none;exitX=0.853;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=10;" value="via C20 ou C10 ?">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_d20_c" edge="1" parent="1" source="ac_d20" target="ac_c20" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_d10_c" edge="1" parent="1" source="ac_d10" target="ac_c10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_bus1_d25" edge="1" parent="1" source="ac_bus1" target="ac_d25" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;endArrow=none;exitX=0.806;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=10;align=right;" value="amont ou aval&lt;br&gt;du diff. 30 mA ?">
+                    <mxGeometry relative="1" x="-0.1" y="-10" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="w_d25_j" edge="1" parent="1" source="ac_d25" target="ac_j25" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_j_spd" edge="1" parent="1" source="ac_j25" target="ac_spd" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=1;endArrow=none;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="w_j_chau" edge="1" parent="1" source="ac_j25" target="tab_chaumiere" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=11;" value="R2V 3G6 · ~20 m · PE inclus&lt;br&gt;&lt;i&gt;à tirer&lt;/i&gt;">
+                    <mxGeometry relative="1" x="0.8" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ===== Liaisons terre ===== -->
+                <mxCell id="pe_piquet" edge="1" parent="1" source="terre_piquet" target="terre_barrette" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;strokeWidth=2;dashed=1;endArrow=none;labelBackgroundColor=#ffffff;" value="tresse Cu 25 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pe_barrette" edge="1" parent="1" source="terre_barrette" target="terre_rep" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;strokeWidth=2;dashed=1;endArrow=none;labelBackgroundColor=#ffffff;" value="PE 16 mm²">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pe_pv" edge="1" parent="1" source="terre_rep" target="pv" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;exitX=0;exitY=0.3;entryX=0;entryY=0.5;labelBackgroundColor=#ffffff;fontSize=11;" value="PE 6 mm² panneaux + rails">
+                    <mxGeometry relative="1" x="-0.6" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="35" y="978"/>
+                            <mxPoint x="35" y="105"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pe_dc" edge="1" parent="1" source="terre_rep" target="dc_pe" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;exitX=0;exitY=0.7;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;fontSize=11;" value="PE 10 mm² (H07V-R)">
+                    <mxGeometry relative="1" x="-0.3" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="170" y="1002"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pe_dc_spd" edge="1" parent="1" source="dc_spd" target="dc_pe" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pe_es" edge="1" parent="1" source="terre_rep" target="es" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;exitX=1;exitY=0.3;entryX=1;entryY=0.9;labelBackgroundColor=#ffffff;fontSize=11;" value="PE 6 mm² · M6">
+                    <mxGeometry relative="1" x="0.3" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="930" y="978"/>
+                            <mxPoint x="930" y="480"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pe_ac" edge="1" parent="1" source="terre_rep" target="ac_pe" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;exitX=1;exitY=0.8;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;fontSize=11;" value="PE 10 mm² · bornier coffret AC">
+                    <mxGeometry relative="1" x="-0.2" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1585" y="1008"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pe_ac_spd" edge="1" parent="1" source="ac_spd" target="ac_pe" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2d7600;dashed=1;endArrow=none;" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Cartouche / légende ===== -->
+                <mxCell id="cartouche" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" value="&lt;b style=&quot;font-size:14px&quot;&gt;Unifilaire — armoire de production&lt;/b&gt;&lt;br&gt;État installé au 11/10/2026 · Écolieu de Kergludaouen (SCIC Résiliens)&lt;br&gt;Valeurs : docs/materiel.md · « ? » : docs/a-verifier.md&lt;br&gt;Symboles simplifiés (blocs), pas la bibliothèque IEC." vertex="1">
+                    <mxGeometry x="1200" y="1080" width="460" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="legende" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="&lt;b&gt;Légende&lt;/b&gt; — rouge : DC + · noir : DC − · bleu : AC (L+N) · vert pointillé : terre · gris pointillé : communication · orange pointillé / « ? » : à vérifier · contour pointillé : à réaliser" vertex="1">
+                    <mxGeometry x="20" y="1210" width="1100" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

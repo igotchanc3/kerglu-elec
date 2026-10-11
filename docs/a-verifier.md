@@ -17,6 +17,10 @@
 - [ ] Circuits 20 A et 10 A de la brocante : qu'alimentent-ils ? Sections associées ?
 
 ## Mise en service
+- [ ] **Régime de neutre côté AC** : où est faite la liaison N–PE en sortie de l'EasySolar (relais de terre interne en mode onduleur ?) ? Sans elle, le différentiel 30 mA ne déclenche pas sur défaut à la terre.
+- [ ] Sur quelle sortie AC de l'EasySolar le coffret AC est-il branché, et avec quel câble ?
+- [ ] Prise modulaire 16 A du coffret AC : protégée par le C20 ou le C10 ?
+- [ ] Synoptique : un trait de terre arrive sur le coupe-batterie — volontaire ? (pas repris dans l'unifilaire)
 - [ ] Profil LiFePO4 VEConfigure : valeurs à recouper avec la fiche technique Redodo.
 - [ ] Câble VE.Direct SmartShunt → EasySolar à commander.
 - [ ] Interface de suivi du SOC depuis la chaumière : Remote Console en Wi-Fi local suffit-il à 15-20 m ? Sinon Cat6 dans la tranchée.
