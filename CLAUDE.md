@@ -24,5 +24,10 @@ Détails : `docs/contexte.md`, `docs/materiel.md`, `docs/apprentissages.md`.
 5. Sécurité : signaler explicitement tout choix qui augmente le risque d'arc DC, de surcharge ou qui sort de la NF C 15-100 / guide UTE C 15-712-2 (installations PV autonomes). Ne pas valider une modif « pour faire plaisir ».
 6. Réponses courtes et directes, en français.
 
+## Git (géré par Claude, pas par Polar)
+- **Début de session** : `git pull` avant toute modif (le repo est aussi modifié depuis Claude chat).
+- **Fin de session ou modif terminée** : commit + `git push` sans attendre qu'on le demande.
+- En cas de conflit : ne rien écraser, expliquer le conflit en une phrase et proposer la résolution.
+
 ## Commits
 Messages en français, au présent : `schema: ajout départ éclairage brocante`, `docs: relevé SOC 24/10`.
