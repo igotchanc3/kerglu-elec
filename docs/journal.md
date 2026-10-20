@@ -8,6 +8,7 @@
 - [ ] Mettre en place et tester le suivi du niveau batterie depuis la chaumière
 - [ ] Petit réseau d'éclairage (et prises ?) dans la brocante, au moins pour éclairer l'armoire en maintenance
 - [ ] Tirer le 3G6 de l'armoire jusqu'au tableau divisionnaire de la chaumière
+- [ ] Dimensionner les éléments d'éclairage, proposer des références à faire valider par Mymy pour la déco
 
 ## Entrées
 - 2026-10-11 — Fin de session schémas : `unifilaire-armoire.drawio` terminé pour l'état installé (retouches de mise en page par Polar, circuit prises brocante marqué « à réaliser » hors X1, note sur l'ordre MEGA / coupe-batterie retirée). Reste ouvert : 30 mA du départ chaumière (décision avant de tirer le câble), test N–PE, sections Q4/Q5, export PNG.
