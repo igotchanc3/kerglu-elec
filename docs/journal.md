@@ -11,6 +11,8 @@
 - [ ] Dimensionner les éléments d'éclairage, proposer des références à faire valider par Mymy pour la déco
 
 ## Entrées
+- 2026-10-27 — Chantier d'octobre, J2 : séchage de l'armoire DC au radiateur, alimenté directement par le solaire (bon ensoleillement). Suivi SOC toujours via l'appli Redodo (Bluetooth, sur place).
+- 2026-10-26 — Chantier d'octobre, J1 : eau trouvée dans l'armoire DC, amenée par les gaines PV (annelé inox le long du toit puis IRL). Décision : point d'évacuation + remontée du tube avant l'entrée, sans monter sur le toit ; jonction annelé/IRL à reprendre plus tard. Pilotes MK3-USB + VEConfigure installés (prise en main rapide), Remote Console consultée, clé USB insérée dans le GX pour l'enregistrement des logs.
 - 2026-10-11 — Fin de session schémas : `unifilaire-armoire.drawio` terminé pour l'état installé (retouches de mise en page par Polar, circuit prises brocante marqué « à réaliser » hors X1, note sur l'ordre MEGA / coupe-batterie retirée). Reste ouvert : 30 mA du départ chaumière (décision avant de tirer le câble), test N–PE, sections Q4/Q5, export PNG.
 - 2026-10-11 — Unifilaire armoire : DC en 2 fils, réponses de Polar intégrées (parafoudre DC = Citel, sortie AC en R2V 3G6, Q4 = prises dont X1, Q5 = éclairage, Q6 en parallèle de Q3 par Wago). ⚠️ Départ chaumière sans 30 mA : décision à prendre avant de tirer le câble.
 - 2026-10-11 — `unifilaire-armoire.drawio` refait en vrai unifilaire (symboles normalisés, jeu de barres, repères Q/F/G/U, ligne de départs) à la place de la version en blocs.
