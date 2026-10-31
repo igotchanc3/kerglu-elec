@@ -12,6 +12,7 @@
 - [ ] Acheter des cache-dents pour le peigne HX³ du tableau chaumière (dents libres à protéger, IP2X) — avant mise sous tension
 
 ## Entrées
+- 2026-10-31 — Profil LiFePO4 appliqué sur l'EasySolar (partie VE.Bus, via VictronConnect Mac + MK3, mdp `ZZZ`) : détail dans `exploitation.md`. Câble VE.Direct SmartShunt posé. Reste : MPPT (réglages séparés, via Bluetooth) et choix du SmartShunt comme moniteur batterie dans le GX.
 - 2026-10-31 — Tableau chaumière : peigne HX³ laissé entier (réserve pour ajouts futurs) — dents libres à protéger par cache-dents, pas de scotch en définitif.
 - 2026-10-27 — Chantier d'octobre, J2 : séchage de l'armoire DC au radiateur, alimenté directement par le solaire (bon ensoleillement). Suivi SOC toujours via l'appli Redodo (Bluetooth, sur place).
 - 2026-10-26 — Chantier d'octobre, J1 : eau trouvée dans l'armoire DC, amenée par les gaines PV (annelé inox le long du toit puis IRL). Décision : point d'évacuation + remontée du tube avant l'entrée, sans monter sur le toit ; jonction annelé/IRL à reprendre plus tard. Pilotes MK3-USB + VEConfigure installés (prise en main rapide), Remote Console consultée, clé USB insérée dans le GX pour l'enregistrement des logs.
