@@ -17,6 +17,6 @@
 ## Mise en service
 - [ ] **Liaison N–PE en sortie de l'EasySolar** (le PE, lui, est continu) : normalement faite par le relais de terre interne en mode onduleur. Test : onduleur seul en marche, sur la prise X1 mesurer N–PE ≈ 0 V et L–PE ≈ 230 V. Si N–PE ≈ 115 V, le neutre est flottant et le 30 mA ne protège pas.
 - [ ] Synoptique : un trait de terre arrive sur le coupe-batterie — volontaire ? (pas repris dans l'unifilaire)
-- [ ] Profil LiFePO4 VEConfigure : valeurs à recouper avec la fiche technique Redodo.
-- [ ] Câble VE.Direct SmartShunt → EasySolar à commander.
+- [x] Profil LiFePO4 VE.Bus appliqué le 31/10 (fiche Redodo : charge max 100 A, 28,8 V ± 0,4 V). Seuil de coupure BMS non publié par Redodo → à lire dans l'appli Redodo si dispo.
+- [x] Câble VE.Direct SmartShunt → EasySolar posé le 31/10.
 - [ ] Interface de suivi du SOC depuis la chaumière : Remote Console en Wi-Fi local suffit-il à 15-20 m ? Sinon Cat6 dans la tranchée.
