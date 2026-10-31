@@ -31,3 +31,4 @@
 - **GX Remote Console** : Wi-Fi local de l'EasySolar, navigateur sur IP locale, sans internet.
 - **VRM** : cloud, internet requis. Carte SD dans le GX = log CSV continu, téléversable après coup (utile pour le 1er hiver).
 - **VEConfigure** : Windows + MK3-USB.
+- Le MK3-USB branché sur le port VE.Bus (avec VictronConnect ouvert) bloque la lecture de l'onduleur par le GX : le débrancher après chaque session de réglage.

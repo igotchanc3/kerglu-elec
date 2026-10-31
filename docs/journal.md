@@ -12,6 +12,7 @@
 - [ ] Acheter des cache-dents pour le peigne HX³ du tableau chaumière (dents libres à protéger, IP2X) — avant mise sous tension
 
 ## Entrées
+- 2026-10-31 — Test de charge : ~2 300 W AC = ~92 A batterie, arrêté là. Limite = BMS 100 A. Le MK3 branché sur le VE.Bus empêchait le GX de lire l'onduleur (Output absent de l'afficheur) : à débrancher après chaque usage.
 - 2026-10-31 — MPPT passé en préconfiguration Smart Lithium (LiFePO4) depuis le téléphone : 28,4 / 27,0 V, coupure basse température 5 °C.
 - 2026-10-31 — Profil LiFePO4 appliqué sur l'EasySolar (partie VE.Bus, via VictronConnect Mac + MK3, mdp `ZZZ`) : détail dans `exploitation.md`. Câble VE.Direct SmartShunt posé. Reste : MPPT (réglages séparés, via Bluetooth) et choix du SmartShunt comme moniteur batterie dans le GX.
 - 2026-10-31 — Tableau chaumière : peigne HX³ laissé entier (réserve pour ajouts futurs) — dents libres à protéger par cache-dents, pas de scotch en définitif.
