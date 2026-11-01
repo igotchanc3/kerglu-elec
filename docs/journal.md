@@ -3,6 +3,9 @@
 > Plus récent en haut. Une ligne par décision ou intervention : `AAAA-MM-JJ — quoi — pourquoi (si décision)`.
 
 ## Prochaines étapes (reprises de Notion, 11/10/2026)
+- [ ] **Priorité au prochain retour — limiteur de courant batterie** (≤ 100 A ≈ 2 300 W AC) : relais du GX sur la puissance de sortie AC (> ~2 300 W pendant quelques s) → commande un contacteur à auto-maintien sur le départ 230 V ; bouton de réarmement + voyant dans un boîtier accessible hors armoire ; C25 conservé pour protéger le câble. Vérifier qu'un contact NF est dispo sur le relais du GX. Voir `exploitation.md` § Gestion de la surcharge.
+- [ ] Raccorder le parafoudre AC du départ 230 V (oublié le 31/10)
+- [ ] Afficher une fiche de remise en route sur l'armoire
 - [ ] Programmer l'onduleur (VEConfigure → PC Windows nécessaire)
 - [ ] Brancher le SmartShunt à l'onduleur (commander le câble VE.Direct Victron)
 - [ ] Mettre en place et tester le suivi du niveau batterie depuis la chaumière
@@ -12,6 +15,8 @@
 - [ ] Acheter des cache-dents pour le peigne HX³ du tableau chaumière (dents libres à protéger, IP2X) — avant mise sous tension
 
 ## Entrées
+- 2026-11-01 — Départ fin de chantier d'octobre : installation entièrement coupée (sectionneur PV → EasySolar → sectionneur batterie), batterie laissée à ~90 % (pas de décharge vers 50-60 %, écart jugé négligeable sur quelques mois). Tour de vérif de l'installation : rien d'anormal. Peu d'usage prévu avant printemps/été 2027.
+- 2026-11-01 — Décision surcharge : le seuil de surcharge de l'EasySolar n'est pas réglable (vérifié doc Victron) et le C25 de départ ne limite pas la puissance → limiteur à mettre en place au prochain retour (relais GX + contacteur auto-maintien + réarmement accessible). Pourquoi : protéger la batterie (100 A continu) d'un usage partagé où personne ne voit la puissance totale.
 - 2026-10-31 — Test de dépassement : ~2 900 W / ~115 A sans coupure, seulement une alarme Overload sur le GX.
 - 2026-10-31 — Test de charge : ~2 300 W AC = ~92 A batterie, arrêté là. Limite = BMS 100 A. Le MK3 branché sur le VE.Bus empêchait le GX de lire l'onduleur (Output absent de l'afficheur) : à débrancher après chaque usage.
 - 2026-10-31 — MPPT passé en préconfiguration Smart Lithium (LiFePO4) depuis le téléphone : 28,4 / 27,0 V, coupure basse température 5 °C.
