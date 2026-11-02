@@ -8,13 +8,14 @@
 - [ ] Afficher une fiche de remise en route sur l'armoire
 - [ ] Programmer l'onduleur (VEConfigure → PC Windows nécessaire)
 - [ ] Brancher le SmartShunt à l'onduleur (commander le câble VE.Direct Victron)
-- [ ] Mettre en place et tester le suivi du niveau batterie depuis la chaumière
+- [ ] **Suivi du niveau batterie en CPL** (Remote Console) : apporter les boîtiers CPL de chez Polar (même modèle sur tout le réseau, appairés avant le départ) et tester GX ↔ atelier puis GX ↔ chaumière. Branchés en direct sur la prise (pas de multiprise filtrée). Voir `a-verifier.md` § Mise en service.
 - [ ] Petit réseau d'éclairage (et prises ?) dans la brocante, au moins pour éclairer l'armoire en maintenance
 - [ ] Tirer le 3G6 de l'armoire jusqu'au tableau divisionnaire de la chaumière
 - [ ] Dimensionner les éléments d'éclairage, proposer des références à faire valider par Mymy pour la déco
 - [ ] Acheter des cache-dents pour le peigne HX³ du tableau chaumière (dents libres à protéger, IP2X) — avant mise sous tension
 
 ## Entrées
+- 2026-11-02 — Décision suivi SOC à distance : CPL sur le réseau 230 V de l'onduleur plutôt qu'un câble Ethernet en tranchée. Pourquoi : affichage à l'atelier **et** à la chaumière (lieux d'usage éloignés), boîtiers déjà possédés (2 modèles, 3-4 ex. chacun), rien à acheter. Limites connues : l'affichage tombe si l'onduleur ou le futur limiteur coupe le 230 V ; ~2-4 W par boîtier en continu.
 - 2026-11-01 — Départ fin de chantier d'octobre : installation entièrement coupée (sectionneur PV → EasySolar → sectionneur batterie), batterie laissée à ~90 % (pas de décharge vers 50-60 %, écart jugé négligeable sur quelques mois). Tour de vérif de l'installation : rien d'anormal. Peu d'usage prévu avant printemps/été 2027.
 - 2026-11-01 — Décision surcharge : le seuil de surcharge de l'EasySolar n'est pas réglable (vérifié doc Victron) et le C25 de départ ne limite pas la puissance → limiteur à mettre en place au prochain retour (relais GX + contacteur auto-maintien + réarmement accessible). Pourquoi : protéger la batterie (100 A continu) d'un usage partagé où personne ne voit la puissance totale.
 - 2026-10-31 — Test de dépassement : ~2 900 W / ~115 A sans coupure, seulement une alarme Overload sur le GX.

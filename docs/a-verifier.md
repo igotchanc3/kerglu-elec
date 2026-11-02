@@ -19,4 +19,4 @@
 - [ ] Synoptique : un trait de terre arrive sur le coupe-batterie — volontaire ? (pas repris dans l'unifilaire)
 - [x] Profil LiFePO4 VE.Bus appliqué le 31/10 (fiche Redodo : charge max 100 A, 28,8 V ± 0,4 V). Seuil de coupure BMS non publié par Redodo → à lire dans l'appli Redodo si dispo.
 - [x] Câble VE.Direct SmartShunt → EasySolar posé le 31/10.
-- [ ] Interface de suivi du SOC depuis la chaumière : Remote Console en Wi-Fi local suffit-il à 15-20 m ? Sinon Cat6 dans la tranchée.
+- [ ] Suivi du SOC à distance : Wi-Fi du GX insuffisant → CPL retenu (02/11). À tester au prochain retour : qualité de liaison malgré le bruit de l'onduleur, à l'atelier et à la chaumière. Sans box sur site (pas de DHCP), fixer une IP statique au GX. Repli si échec : Cat6 en gaine.
