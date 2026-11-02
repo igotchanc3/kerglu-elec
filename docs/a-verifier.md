@@ -15,6 +15,7 @@
 - [ ] Sections posées : Q4 (C20, prises) → 2,5 mm² minimum requis ; Q5 (C10, éclairage) → 1,5 mm² minimum. Relever ce qui est posé (marquage sur la gaine).
 
 ## Mise en service
+- [ ] **Comportement de l'EasySolar après surcharge** (source forum, pas doc officielle) : coupe, retente 3 fois à 30 s, puis reste éteint jusqu'au réarmement manuel ? À observer au premier dépassement et noter la durée tenue avant coupure.
 - [ ] **Liaison N–PE en sortie de l'EasySolar** (le PE, lui, est continu) : normalement faite par le relais de terre interne en mode onduleur. Test : onduleur seul en marche, sur la prise X1 mesurer N–PE ≈ 0 V et L–PE ≈ 230 V. Si N–PE ≈ 115 V, le neutre est flottant et le 30 mA ne protège pas.
 - [ ] Synoptique : un trait de terre arrive sur le coupe-batterie — volontaire ? (pas repris dans l'unifilaire)
 - [x] Profil LiFePO4 VE.Bus appliqué le 31/10 (fiche Redodo : charge max 100 A, 28,8 V ± 0,4 V). Seuil de coupure BMS non publié par Redodo → à lire dans l'appli Redodo si dispo.

@@ -3,7 +3,7 @@
 > Plus récent en haut. Une ligne par décision ou intervention : `AAAA-MM-JJ — quoi — pourquoi (si décision)`.
 
 ## Prochaines étapes (reprises de Notion, 11/10/2026)
-- [ ] **Priorité au prochain retour — limiteur de courant batterie** (≤ 100 A ≈ 2 300 W AC) : relais du GX sur la puissance de sortie AC (> ~2 300 W pendant quelques s) → commande un contacteur à auto-maintien sur le départ 230 V ; bouton de réarmement + voyant dans un boîtier accessible hors armoire ; C25 conservé pour protéger le câble. Vérifier qu'un contact NF est dispo sur le relais du GX. Voir `exploitation.md` § Gestion de la surcharge.
+- [ ] Montrer à au moins une personne sur place comment éteindre/rallumer l'EasySolar (réarmement après surcharge). Voir `exploitation.md` § Gestion de la surcharge.
 - [ ] Raccorder le parafoudre AC du départ 230 V (oublié le 31/10)
 - [ ] Afficher une fiche de remise en route sur l'armoire
 - [ ] Programmer l'onduleur (VEConfigure → PC Windows nécessaire)
@@ -15,6 +15,7 @@
 - [ ] Acheter des cache-dents pour le peigne HX³ du tableau chaumière (dents libres à protéger, IP2X) — avant mise sous tension
 
 ## Entrées
+- 2026-11-02 — Décision surcharge révisée : **pas de limiteur**, on laisse les protections de l'onduleur (coupure + réarmement manuel après 3 surcharges) et du BMS, et on observe aux chantiers 2027. Pourquoi : usure estimée ~6 €/an contre 100-200 € de matériel ; le GX de l'EasySolar n'a pas de relais ; un disjoncteur DC batterie risquerait de casser le MPPT. Node-RED gardé en réserve. Détail dans `exploitation.md`.
 - 2026-11-02 — Décision suivi SOC à distance : CPL sur le réseau 230 V de l'onduleur plutôt qu'un câble Ethernet en tranchée. Pourquoi : affichage à l'atelier **et** à la chaumière (lieux d'usage éloignés), boîtiers déjà possédés (2 modèles, 3-4 ex. chacun), rien à acheter. Limites connues : l'affichage tombe si l'onduleur ou le futur limiteur coupe le 230 V ; ~2-4 W par boîtier en continu.
 - 2026-11-01 — Départ fin de chantier d'octobre : installation entièrement coupée (sectionneur PV → EasySolar → sectionneur batterie), batterie laissée à ~90 % (pas de décharge vers 50-60 %, écart jugé négligeable sur quelques mois). Tour de vérif de l'installation : rien d'anormal. Peu d'usage prévu avant printemps/été 2027.
 - 2026-11-01 — Décision surcharge : le seuil de surcharge de l'EasySolar n'est pas réglable (vérifié doc Victron) et le C25 de départ ne limite pas la puissance → limiteur à mettre en place au prochain retour (relais GX + contacteur auto-maintien + réarmement accessible). Pourquoi : protéger la batterie (100 A continu) d'un usage partagé où personne ne voit la puissance totale.
